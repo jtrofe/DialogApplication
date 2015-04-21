@@ -18,7 +18,7 @@
             <item name="android:padding">5dp</item>
             <item name="android:textAllCaps">true</item>
         </style>
-        <style name="RatingStars">
+        <style name="RatingStars" parent="android:Widget.Holo.Light.RatingBar">
             <item name="android:layout_centerHorizontal">true</item>
             <item name="android:layout_alignParentTop">true</item>
             <item name="android:layout_margin">10dp</item>
