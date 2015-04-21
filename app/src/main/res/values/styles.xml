@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- ==================== -->
+    <!-- Rating dialog styles -->
+    <!-- ==================== -->
+        <style name="RatingButton">
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">#888888</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">20dp</item>
+            <item name="android:padding">5dp</item>
+            <item name="android:textAllCaps">true</item>
+        </style>
+        <style name="RatingStars">
+            <item name="android:layout_centerHorizontal">true</item>
+            <item name="android:layout_alignParentTop">true</item>
+            <item name="android:layout_margin">10dp</item>
+            <item name="android:numStars">5</item>
+            <item name="android:stepSize">1.0</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+    <!-- ============= -->
+    <!-- Log in dialog -->
+    <!-- ============= -->
+        <style name="DialogSectionHeader">
+            <item name="android:orientation">horizontal</item>
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginLeft">4dp</item>
+            <item name="android:layout_marginRight">4dp</item>
+            <item name="android:layout_marginTop">5dp</item>
+            <item name="android:background">@drawable/dialog_section_header_background</item>
+        </style>
+        <style name="DialogExpandIcon">
+            <item name="android:layout_marginLeft">4dp</item>
+            <item name="android:background">@android:drawable/ic_menu_more</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+        <style name="DialogSectionText">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_gravity">center_vertical</item>
+        </style>
+        <style name="DialogUsernameText">
+            <item name="android:hint">Username</item>
+            <item name="android:inputType">textCapWords</item>
+            <item name="android:imeOptions">actionDone</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:maxLength">20</item>
+            <item name="android:layout_marginTop">5dp</item>
+            <item name="android:layout_marginLeft">20dp</item>
+            <item name="android:layout_marginRight">20dp</item>
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:background">@drawable/dialog_input_background</item>
+            <item name="android:paddingLeft">10dp</item>
+            <item name="android:paddingTop">4dp</item>
+            <item name="android:paddingBottom">4dp</item>
+        </style>
+        <style name="DialogPasswordText" parent="DialogUsernameText">
+            <item name="android:inputType">textPassword</item>
+            <item name="android:maxLength">140</item>
+        </style>
+        <style name="DialogLoginButton">
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:padding">8dp</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textColor">#FFFFFF</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:background">#aa55CC</item>
+            <item name="android:layout_gravity">center_horizontal</item>
+        </style>
+</resources>

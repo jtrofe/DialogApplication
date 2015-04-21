@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        style="@android:style/Widget.Holo.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ================== -->
+    <!-- Logging in section -->
+    <!-- ================== -->
+        <LinearLayout
+            android:id="@+id/header_log_in"
+            android:tag="log_in"
+            style="@style/DialogSectionHeader">
+            <ImageView
+                android:id="@+id/icon_log_in"
+                android:backgroundTint="#000000"
+                android:scaleY="-1"
+                style="@style/DialogExpandIcon" />
+            <TextView
+                android:text="Log in"
+                style="@style/DialogSectionText" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/input_log_in_username"
+            style="@style/DialogUsernameText"/>
+        <EditText
+            android:id="@+id/input_log_in_pass"
+            android:hint="Password"
+            style="@style/DialogPasswordText"/>
+
+    <!-- ================== -->
+    <!-- Signing up section -->
+    <!-- ================== -->
+        <LinearLayout
+            android:id="@+id/header_sign_up"
+            android:tag="sign_up"
+            style="@style/DialogSectionHeader">
+            <ImageView
+                android:id="@+id/icon_sign_up"
+                android:backgroundTint="#000000"
+                style="@style/DialogExpandIcon" />
+            <TextView
+                android:text="Sign up"
+                style="@style/DialogSectionText" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_sign_up_username"
+            android:visibility="gone"
+            style="@style/DialogUsernameText"/>
+        <EditText
+            android:id="@+id/input_sign_up_pass1"
+            android:visibility="gone"
+            android:hint="Password"
+            style="@style/DialogPasswordText"/>
+        <EditText
+            android:id="@+id/input_sign_up_pass2"
+            android:visibility="gone"
+            android:hint="Confirm password"
+            style="@style/DialogPasswordText"/>
+
+    <!-- ============= -->
+    <!-- Submit button -->
+    <!-- ============= -->
+        <TextView
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            style="@style/DialogLoginButton"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/dialog_background">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/RatingStars" />
+
+    <TextView
+        android:id="@+id/btn_save_rating"
+        android:text="@android:string/ok"
+        style="@style/RatingButton"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/btn_cancel_rating"
+        android:text="@android:string/cancel"
+        style="@style/RatingButton"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/btn_save_rating"
+        android:layout_toLeftOf="@+id/btn_save_rating"
+        android:layout_toStartOf="@+id/btn_save_rating" />
+</RelativeLayout>
